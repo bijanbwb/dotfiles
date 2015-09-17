@@ -51,6 +51,7 @@ alias v='vim'
 alias vi='vim'
 alias z='vim ~/.zshrc'
 alias beerfest='brew update && brew cleanup && brew prune && brew doctor'
+alias dotfiles='c ~/Downloads && git clone git@github.com:bijanbwb/dotfiles.git && c ~/Downloads/dotfiles && cp ~/.tmux.conf . && cp ~/.vimrc . && cp ~/.zshrc . && ga && gc -m "Dotfiles Update" && git push origin master && echo "Dotfiles Updated"'
 
 # Exports
 export EDITOR=vim
