@@ -35,17 +35,13 @@ alias gh='git browse'
 alias gi='git browse -- issues'
 alias gl='git log'
 alias gco='git checkout'
+alias glo='git log --oneline'
 alias gpr='git browse -- pulls'
 alias gpull='git pull'
 alias gpush='git push' 
 alias l='ls'
 alias lg='ls && git status'
-alias m='mux list'
-alias mc='mux copy'
-alias ml='mux list'
-alias mn='mux new'
-alias mo='mux open'
-alias ms='mux start'
+alias m='mux'
 alias sl='ls'
 alias t='tmux'
 alias ta='tmux attach -t'
@@ -64,6 +60,7 @@ export EDITOR=vim
 export PS1="$ "
 export SKIP_LEVEL_CHECK=true
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
 # Hub
 eval "$(hub alias -s)"
@@ -71,3 +68,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Autojump
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+# nvm
+export NVM_DIR="/Users/bijanbwb/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
