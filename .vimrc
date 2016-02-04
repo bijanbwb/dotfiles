@@ -48,17 +48,12 @@ endif
 " Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'thoughtbot/vim-rspec'
-Plug 'tpope/vim-rails'
+Plug 'elmcast/elm-vim'
 call plug#end()
 
 " CtrlP Setup
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 let g:ctrlp_use_caching = 0
-
-" vim-rspec
-let g:rspec_runner = "os_x_iterm2"
-let g:rspec_command = '!bundle exec rspec {spec}'
 
 " Matchit
 runtime macros/matchit.vim
