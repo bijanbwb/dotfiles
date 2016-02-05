@@ -1,23 +1,23 @@
-# installation 
+# Installation 
 export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
-# set theme name (found in in ~/.oh-my-zsh/themes/)
+# Set theme name (found in in ~/.oh-my-zsh/themes/)
 ZSH_THEME="robbyrussell"
 
-# disable auto-setting terminal title
+# Disable auto-setting terminal title
 DISABLE_AUTO_TITLE="true"
 
-# enable command auto-correction
+# Enable command auto-correction
 ENABLE_CORRECTION="true"
 
-# plugins (found in ~/.oh-my-zsh/plugins/*)
+# Plugins (found in ~/.oh-my-zsh/plugins/*)
 plugins=(rails git ruby)
 
-# path
+# Path
 export PATH="/Users/bijanbwb/.rbenv/shims:/usr/local/bin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/go/bin"
 
-# aliases
+# Aliases
 alias ..='cd ..'
 alias ...='cd ../..'
 alias b='bundle exec'
@@ -58,7 +58,7 @@ alias z='vim ~/.zshrc'
 alias beerfest='brew update && brew cleanup && brew prune && brew doctor'
 alias dotfiles='c ~/Downloads && git clone git@github.com:bijanbwb/dotfiles.git && c ~/Downloads/dotfiles && cp ~/.tmux.conf . && cp ~/.vimrc . && cp ~/.zshrc . && ga && gc -m "Dotfiles Update" && git push origin master && echo "Dotfiles Updated"'
 
-# exports
+# Exports
 export CAMPUS_ALL_COURSES_PATH="/Users/bijanbwb/Downloads/campus-courses-available"
 export EDITOR=vim
 export PS1="$ "
@@ -66,19 +66,19 @@ export SKIP_LEVEL_CHECK=true
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
-# hub
+# Hub
 eval "$(hub alias -s)"
 
 # rbenv
 eval "$(rbenv init -)"
 
-# autojump
+# Autojump
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # nvm
 export NVM_DIR="/Users/bijanbwb/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
-# travis
+# Travis
 [ -f /Users/bijanbwb/.travis/travis.sh ] && source /Users/bijanbwb/.travis/travis.sh
 
