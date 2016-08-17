@@ -1,5 +1,5 @@
 # Installation 
-export ZSH=$HOME/.oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
 # Set theme name (found in in ~/.oh-my-zsh/themes/)
@@ -13,9 +13,6 @@ ENABLE_CORRECTION="true"
 
 # Plugins (found in ~/.oh-my-zsh/plugins/*)
 plugins=(rails git ruby)
-
-# Path
-export PATH="/Users/bijanbwb/.rbenv/shims:/usr/local/bin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/go/bin"
 
 # Aliases
 alias ..='cd ..'
@@ -42,6 +39,8 @@ alias glo='git log --oneline'
 alias gpr='git browse -- pulls'
 alias gpull='git pull'
 alias gpush='git push' 
+alias i='iex'
+alias irb='irb --simple-prompt'
 alias l='ls'
 alias lg='ls && git status'
 alias m='mux'
@@ -61,10 +60,13 @@ alias dotfiles='c ~/Downloads && git clone git@github.com:bijanbwb/dotfiles.git 
 # Exports
 export CAMPUS_ALL_COURSES_PATH="/Users/bijanbwb/Downloads/campus-courses-available"
 export EDITOR=vim
+export GOPATH="/Users/bijanbwb/Dropbox/Technology and Design/projects/gocode"
 export PS1="$ "
 export SKIP_LEVEL_CHECK=true
+export PATH="/Users/bijanbwb/.rbenv/shims:/usr/local/bin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/go/bin"
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
 export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+export PATH="$PATH:/usr/local/Cellar/elixir/1.2.5/bin"
 
 # Hub
 eval "$(hub alias -s)"

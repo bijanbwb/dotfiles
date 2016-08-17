@@ -49,6 +49,8 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'elmcast/elm-vim'
+Plug 'elixir-lang/vim-elixir'
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 " CtrlP Setup
