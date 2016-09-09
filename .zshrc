@@ -66,7 +66,6 @@ export SKIP_LEVEL_CHECK=true
 export PATH="/Users/bijanbwb/.rbenv/shims:/usr/local/bin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/go/bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
 export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="$PATH:/usr/local/Cellar/elixir/1.2.5/bin"
 
 # Hub
 eval "$(hub alias -s)"
