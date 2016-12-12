@@ -57,5 +57,8 @@ call plug#end()
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 let g:ctrlp_use_caching = 0
 
+" elm-format Setup
+let g:elm_format_autosave = 1
+
 " Matchit
 runtime macros/matchit.vim

@@ -24,6 +24,7 @@ alias br='bundle exec rspec'
 alias c='cd'
 alias dl='cd ~/Downloads && ls'
 alias e='exit'
+alias em='echo "$1" Hello/*.elm'
 alias g='git'
 alias gs='git status'
 alias ga='git add .'
@@ -44,6 +45,9 @@ alias irb='irb --simple-prompt'
 alias l='ls'
 alias lg='ls && git status'
 alias m='mux'
+alias p='v ~/Dropbox/_projects.md'
+alias reload='source ~/.zshrc'
+alias servedir='ruby -run -e httpd . -p 9091'
 alias sl='ls'
 alias t='tmux'
 alias ta='tmux attach -t'
@@ -66,6 +70,7 @@ export SKIP_LEVEL_CHECK=true
 export PATH="/Users/bijanbwb/.rbenv/shims:/usr/local/bin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/go/bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$PATH:/usr/local/bin/yarn"
 
 # Hub
 eval "$(hub alias -s)"
@@ -82,4 +87,8 @@ export NVM_DIR="/Users/bijanbwb/.nvm"
 
 # Travis
 [ -f /Users/bijanbwb/.travis/travis.sh ] && source /Users/bijanbwb/.travis/travis.sh
+
+# asdf
+# . $HOME/.asdf/asdf.sh
+# . $HOME/.asdf/completions/asdf.bash
 
