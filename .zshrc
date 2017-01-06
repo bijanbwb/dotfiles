@@ -14,6 +14,10 @@ ENABLE_CORRECTION="true"
 # Plugins (found in ~/.oh-my-zsh/plugins/*)
 plugins=(rails git ruby)
 
+# Selective disable zsh autocorrection
+unsetopt correct_all  
+setopt correct
+
 # Aliases
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -45,7 +49,7 @@ alias irb='irb --simple-prompt'
 alias l='ls'
 alias lg='ls && git status'
 alias m='mux'
-alias p='v ~/Dropbox/_projects.md'
+alias p='v ~/Dropbox/_library.md'
 alias reload='source ~/.zshrc'
 alias servedir='ruby -run -e httpd . -p 9091'
 alias sl='ls'
@@ -89,6 +93,6 @@ export NVM_DIR="/Users/bijanbwb/.nvm"
 [ -f /Users/bijanbwb/.travis/travis.sh ] && source /Users/bijanbwb/.travis/travis.sh
 
 # asdf
-# . $HOME/.asdf/asdf.sh
-# . $HOME/.asdf/completions/asdf.bash
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
 
