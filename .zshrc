@@ -1,25 +1,16 @@
-# Installation 
-export ZSH="$HOME/.oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
+# zsh
+export ZSH=$HOME/.oh-my-zsh
 
-# Set theme name (found in in ~/.oh-my-zsh/themes/)
+# theme
 ZSH_THEME="robbyrussell"
 
-# Disable auto-setting terminal title
-DISABLE_AUTO_TITLE="true"
+# plugins
+plugins=(git ruby rails)
 
-# Enable command auto-correction
-ENABLE_CORRECTION="true"
+# load
+source $ZSH/oh-my-zsh.sh
 
-# Plugins (found in ~/.oh-my-zsh/plugins/*)
-plugins=(rails git ruby)
-
-# Disable zsh autocorrection
-unsetopt correct_all
-
-# Aliases
-alias ..='cd ..'
-alias ...='cd ../..'
+# aliases
 alias a='asdf'
 alias be='bundle exec'
 alias bi='bundle install'
@@ -59,26 +50,15 @@ alias vi='vim'
 alias vr='vim ~/.vimrc'
 alias z='vim ~/.zshrc'
 alias beerfest='brew update && brew cleanup && brew prune && brew doctor'
-alias dotfiles='c ~/Downloads && git clone git@github.com:bijanbwb/dotfiles.git && c ~/Downloads/dotfiles && cp ~/.tmux.conf . && cp ~/.vimrc . && cp ~/.zshrc . && ga && gc -m "Dotfiles Update" && git push origin master && echo "Dotfiles Updated"'
+alias dotfiles='cd ~/Downloads && git clone git@github.com:bijanbwb/dotfiles.git && cd ~/Downloads/dotfiles && cp ~/.tmux.conf . && cp ~/.vimrc . && cp ~/.zshrc . && ga && gc -m "Dotfiles Update" && git push origin master && echo "Dotfiles Updated"'
 
-# Exports
+# exports
 export CAMPUS_ALL_COURSES_PATH="/Users/bijanbwb/Downloads/campus-courses-available"
 export EDITOR=vim
-export PS1="$ "
-export SKIP_LEVEL_CHECK=true
-export PATH="/usr/local/bin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"
-export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
 
-# Hub
-eval "$(hub alias -s)"
-
-# Autojump
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
-
-# Travis
-[ -f /Users/bijanbwb/.travis/travis.sh ] && source /Users/bijanbwb/.travis/travis.sh
-
-# asdf
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+# application settings
+. $HOME/.asdf/asdf.sh && . $HOME/.asdf/completions/asdf.bash # asdf
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh # autojump
+eval "$(hub alias -s)" # hub
+[ -f /Users/bijanbwb/.travis/travis.sh ] && source /Users/bijanbwb/.travis/travis.sh # travis
 
