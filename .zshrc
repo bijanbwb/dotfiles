@@ -49,12 +49,13 @@ alias v='vim'
 alias vi='vim'
 alias vr='vim ~/.vimrc'
 alias z='vim ~/.zshrc'
-alias beerfest='brew update && brew cleanup && brew prune && brew doctor'
+alias beerfest='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'
 alias dotfiles='cd ~/Downloads && git clone git@github.com:bijanbwb/dotfiles.git && cd ~/Downloads/dotfiles && cp ~/.tmux.conf . && cp ~/.vimrc . && cp ~/.zshrc . && ga && gc -m "Dotfiles Update" && git push origin master && echo "Dotfiles Updated"'
 
 # exports
 export CAMPUS_ALL_COURSES_PATH="/Users/bijanbwb/Downloads/campus-courses-available"
 export EDITOR=vim
+export PATH="/Users/bijanbwb/.local/bin:$PATH"
 
 # application settings
 . $HOME/.asdf/asdf.sh && . $HOME/.asdf/completions/asdf.bash # asdf
@@ -62,10 +63,3 @@ export EDITOR=vim
 eval "$(hub alias -s)" # hub
 [ -f /Users/bijanbwb/.travis/travis.sh ] && source /Users/bijanbwb/.travis/travis.sh # travis
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# haskell stack
-export PATH="/Users/bijanbwb/.local/bin:$PATH"
