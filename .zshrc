@@ -1,11 +1,9 @@
 # zsh
 export ZSH=$HOME/.oh-my-zsh
 
-# theme
+# settings
 ZSH_THEME="robbyrussell"
-
-# plugins
-plugins=(git ruby rails)
+DISABLE_AUTO_TITLE="true"
 
 # load
 source $ZSH/oh-my-zsh.sh
@@ -38,7 +36,9 @@ alias irb='irb --simple-prompt'
 alias l='ls'
 alias lg='ls && git status'
 alias reload='source ~/.zshrc'
+alias rf='redis-cli FLUSHALL'
 alias servedir='ruby -run -e httpd . -p 9091'
+alias sg='stack ghci'
 alias sl='ls'
 alias t='tmux'
 alias ta='tmux attach -t'
@@ -62,3 +62,10 @@ export EDITOR=vim
 eval "$(hub alias -s)" # hub
 [ -f /Users/bijanbwb/.travis/travis.sh ] && source /Users/bijanbwb/.travis/travis.sh # travis
 
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# haskell stack
+export PATH="/Users/bijanbwb/.local/bin:$PATH"
