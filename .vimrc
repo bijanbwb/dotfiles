@@ -51,6 +51,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'elmcast/elm-vim'
 Plug 'elixir-lang/vim-elixir'
 Plug 'scrooloose/nerdtree'
+Plug 'slashmili/alchemist.vim'
 call plug#end()
 
 " CtrlP Setup

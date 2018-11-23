@@ -22,17 +22,13 @@ alias ga='git add .'
 alias gb='git branch'
 alias gc='git commit'
 alias gd='git diff'
-alias gh='git browse'
-alias gi='git browse -- issues'
 alias gl='git log'
 alias gm='git merge'
 alias gco='git checkout'
 alias glo='git log --oneline'
-alias gpr='git browse -- pulls'
 alias gpull='git pull'
 alias gpush='git push' 
 alias i='iex'
-alias irb='irb --simple-prompt'
 alias l='ls'
 alias lg='ls && git status'
 alias reload='source ~/.zshrc'
@@ -53,13 +49,10 @@ alias beerfest='brew update && brew upgrade && brew cleanup && brew prune && bre
 alias dotfiles='cd ~/Downloads && git clone git@github.com:bijanbwb/dotfiles.git && cd ~/Downloads/dotfiles && cp ~/.tmux.conf . && cp ~/.vimrc . && cp ~/.zshrc . && ga && gc -m "Dotfiles Update" && git push origin master && echo "Dotfiles Updated"'
 
 # exports
-export CAMPUS_ALL_COURSES_PATH="/Users/bijanbwb/Downloads/campus-courses-available"
 export EDITOR=vim
 export PATH="/Users/bijanbwb/.local/bin:$PATH"
+export ERL_AFLAGS="-kernel shell_history enabled"
 
 # application settings
 . $HOME/.asdf/asdf.sh && . $HOME/.asdf/completions/asdf.bash # asdf
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh # autojump
-eval "$(hub alias -s)" # hub
-[ -f /Users/bijanbwb/.travis/travis.sh ] && source /Users/bijanbwb/.travis/travis.sh # travis
 
