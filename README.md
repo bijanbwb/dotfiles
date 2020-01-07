@@ -1,5 +1,1 @@
 # Dotfiles
-
-- tmux
-- vim
-- zsh
