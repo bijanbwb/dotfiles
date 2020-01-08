@@ -1,0 +1,10 @@
+{
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.formatOnSave": true,
+    "editor.scrollBeyondLastLine": false,
+    "elmLS.elmFormatPath": "/Users/bijanbwb/.asdf/shims/elm-format",
+    "elmLS.elmPath": "/Users/bijanbwb/.asdf/shims/elm",
+    "workbench.startupEditor": "newUntitledFile"
+}
