@@ -8,7 +8,7 @@ DISABLE_AUTO_TITLE="true"
 ENABLE_CORRECTION="true"
 
 # plugins
-plugins=(git)
+plugins=(git zsh-autocomplete)
 
 # load
 source $ZSH/oh-my-zsh.sh
