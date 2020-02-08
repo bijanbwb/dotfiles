@@ -21,3 +21,13 @@ cask "bartender"
 cask "dash"
 cask "firefox-developer-edition"
 cask "visual-studio-code"
+
+# emacs-plus
+# fop
+# htop
+# hub
+# reattach-to-user-namespace
+# the_silver_searcher
+# tmate
+# tmux
+# wget
