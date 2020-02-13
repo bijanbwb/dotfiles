@@ -16,7 +16,6 @@ set nowrap
 set nowritebackup
 set number
 set numberwidth=5
-set relativenumber
 set ruler
 set shiftwidth=2
 set showcmd
