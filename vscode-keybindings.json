@@ -1,45 +1,34 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
+  // JSON Settings
   {
-    "key": "ctrl+shift+f",
-    "command": "workbench.action.terminal.focusNext"
-  },
-  {
-    "key": "ctrl+alt+cmd+,",
+    "key": "cmd+shift+,",
     "command": "workbench.action.openSettingsJson"
   },
+  // Maximize Terminal
   {
-    "key": "shift+alt+`",
+    "key": "alt+shift+`",
     "command": "workbench.action.toggleMaximizedPanel"
   },
+  // Git
   {
-    "key": "shift+alt+c",
-    "command": "workbench.files.action.collapseExplorerFolders"
-  },
-  {
-    "key": "ctrl+alt+cmd+t",
-    "command": "exunit.runTest"
-  },
-  {
-    "key": "ctrl+alt+cmd+p",
-    "command": "exunit.runPrevious"
-  },
-  {
-    "key": "shift+cmd+g",
+    "key": "cmd+shift+g",
     "command": "workbench.view.scm"
   },
-  {
-    "key": "ctrl+shift+g",
-    "command": "-workbench.view.scm"
-  },
+  // File Explorer
   {
     "key": "cmd+n",
     "command": "explorer.newFile",
     "when": "filesExplorerFocus"
   },
   {
-    "key": "shift+cmd+n",
+    "key": "cmd+shift+n",
     "command": "explorer.newFolder",
     "when": "filesExplorerFocus"
+  },
+  // ExUnit
+  {
+    "key": "ctrl+alt+cmd+t",
+    "command": "exunit.runTest"
   }
 ]
