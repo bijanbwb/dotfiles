@@ -1,11 +1,31 @@
 {
-    "editor.acceptSuggestionOnEnter": "smart",
-    "editor.fontFamily": "FiraCode-Retina",
-    "editor.fontLigatures": true,
-    "editor.formatOnSave": true,
-    "editor.scrollBeyondLastLine": false,
-    "elmLS.elmFormatPath": "/Users/bijanbwb/.asdf/shims/elm-format",
-    "elmLS.elmPath": "/Users/bijanbwb/.asdf/shims/elm",
-    "explorer.confirmDragAndDrop": false,
-    "workbench.startupEditor": "newUntitledFile"
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.codeLens": true,
+  "editor.fontFamily": "'FiraCode-Retina'",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.scrollBeyondLastLine": false,
+  "elixirLS.dialyzerEnabled": true,
+  "elixirLS.suggestSpecs": true,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "*.html.leex": "html",
+    "*.html.eex": "html"
+  },
+  "markdownlint.config": {
+    "MD014": false
+  },
+  "search.exclude": {
+    "**/rel/package/files": true
+  },
+  "window.zoomLevel": 0,
+  "workbench.activityBar.visible": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.showTabs": false,
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.statusBar.visible": true
 }
