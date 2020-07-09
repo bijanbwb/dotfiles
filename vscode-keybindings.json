@@ -1,21 +1,17 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-  // JSON Settings
   {
     "key": "cmd+shift+,",
     "command": "workbench.action.openSettingsJson"
   },
-  // Maximize Terminal
   {
     "key": "alt+shift+`",
     "command": "workbench.action.toggleMaximizedPanel"
   },
-  // Git
   {
     "key": "cmd+shift+g",
     "command": "workbench.view.scm"
   },
-  // File Explorer
   {
     "key": "cmd+n",
     "command": "explorer.newFile",
@@ -26,7 +22,6 @@
     "command": "explorer.newFolder",
     "when": "filesExplorerFocus"
   },
-  // ExUnit
   {
     "key": "ctrl+alt+cmd+t",
     "command": "exunit.runTest"
