@@ -3,29 +3,34 @@
   "editor.codeLens": true,
   "editor.fontFamily": "'FiraCode-Retina'",
   "editor.fontLigatures": true,
+  "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.scrollBeyondLastLine": false,
   "elixirLS.dialyzerEnabled": true,
+  "elixirLS.dialyzerWarnOpts": [
+    "no_fail_call"
+  ],
+  "elixirLS.fetchDeps": false,
   "elixirLS.suggestSpecs": true,
   "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
-    "*.html.leex": "html",
-    "*.html.eex": "html"
+    "*.eex": "HTML (EEx)",
+    "*.leex": "HTML (EEx)"
   },
+  "files.trimTrailingWhitespace": true,
   "markdownlint.config": {
     "MD014": false
   },
-  "search.exclude": {
-    "**/rel/package/files": true
-  },
-  "window.zoomLevel": 0,
   "workbench.activityBar.visible": false,
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": false,
+  "workbench.panel.defaultLocation": "right",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.visible": true
+  "workbench.statusBar.visible": true,
+  "window.zoomLevel": -1
 }
