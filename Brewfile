@@ -1,4 +1,5 @@
 tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
 
 brew "autoconf"
 brew "coreutils"
@@ -13,6 +14,7 @@ brew "wxmac"
 
 cask "1password"
 cask "alfred"
+cask "firefox-developer-edition"
 cask "font-fira-code"
 cask "iterm2"
 cask "visual-studio-code"
@@ -21,7 +23,6 @@ cask "zoom"
 # Manual
 # bartender
 # dash
-# firefox-developer-edition
 
 # App Store
 # moom
