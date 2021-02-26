@@ -1,33 +1,30 @@
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
-tap "homebrew/services"
+tap "homebrew/cask-fonts"
 
 brew "autoconf"
-brew "automake"
 brew "coreutils"
+brew "curl"
+brew "fop"
+brew "gh"
 brew "git"
-brew "htop"
-brew "libtool"
-brew "libxslt"
-brew "libyaml"
-brew "openssl"
+brew "gpg"
+brew "tmux"
+brew "vim"
 brew "wxmac"
 
 cask "1password"
 cask "alfred"
-cask "bartender"
-cask "dash"
-cask "firefox-developer-edition"
+cask "font-fira-code"
+cask "iterm2"
 cask "visual-studio-code"
+cask "zoom"
 
-# emacs-plus
-# fop
-# htop
-# hub
-# reattach-to-user-namespace
-# the_silver_searcher
-# tmate
-# tmux
-# wget
+# Manual
+# bartender
+# dash
+# firefox-developer-edition
+
+# App Store
+# moom
+# the-clock
+# things
+# webcam settings
