@@ -1,9 +1,7 @@
 bradlc.vscode-tailwindcss
-dracula-theme.theme-dracula
-eamodio.gitlens
+davidanson.vscode-markdownlint
 elmtooling.elm-ls-vscode
 jakebecker.elixir-ls
 matklad.rust-analyzer
 phoenixframework.phoenix
 vscode-exunit.exunit
-wakatime.vscode-wakatime
