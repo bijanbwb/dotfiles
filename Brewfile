@@ -16,23 +16,14 @@ brew "vim"
 brew "wxmac"
 
 cask "1password"
-cask "alfred"
 cask "chromedriver"
 cask "firefox-developer-edition"
 cask "font-fira-code"
 cask "insomnia"
-cask "iterm2"
 cask "postgres"
-cask "rescuetime"
 cask "visual-studio-code"
 cask "zoom"
 
 # Manual
 # bartender
 # dash
-
-# App Store
-# moom
-# the-clock
-# things
-# webcam settings
