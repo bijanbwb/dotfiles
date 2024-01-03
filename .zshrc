@@ -1,59 +1,62 @@
 # oh-my-zsh
-export ZSH="/Users/bijanbwb/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # settings
-ZSH_THEME="robbyrussell"
-HYPHEN_INSENSITIVE="true"
+CASE_SENSITIVE="true"
 DISABLE_AUTO_TITLE="true"
-ENABLE_CORRECTION="true"
+HYPHEN_INSENSITIVE="true"
+ZSH_THEME="robbyrussell"
+
+# updates
+zstyle ':omz update' mode auto
+zstyle ':omz update' frequency 30
 
 # plugins
-plugins=(git zsh-completions)
+plugins=()
 
 # load
 source $ZSH/oh-my-zsh.sh
 
-# configuration
+# homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# exports
 export EDITOR=vim
 export ERL_AFLAGS="-kernel shell_history enabled"
-export TERM="xterm-256color"
+export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac --without-wx --with-ssl=$(brew --prefix openssl@1.1)"
+export KERL_BUILD_DOCS=yes
 
 # aliases
-alias a="asdf"
-alias ap="asdf plugin-update --all"
-alias bst="./bin/start"
-alias bset="./bin/setup"
-alias bu="brew update && brew upgrade && brew cleanup && brew doctor"
+alias code="code-insiders"
+alias confetti="open raycast://extensions/raycast/raycast/confetti"
 alias dev="cd ~/Development"
 alias dl="cd ~/Downloads"
-alias drop="cd ~/Dropbox"
 alias e="exit"
-alias er="elm repl"
-alias g="git"
-alias gs="git status"
 alias ga="git add ."
 alias gb="git branch"
 alias gc="git commit"
 alias gd="git diff"
+alias gp="git push -u origin HEAD"
+alias gs="git status"
+alias gcl="git clean -df"
 alias gco="git checkout"
 alias glo="git log --oneline"
-alias gpoh="git push origin HEAD"
-alias i="iex -S mix"
-alias mc="mix test; mix credo --strict; mix dialyzer"
+alias mux="tmuxinator"
 alias phx="iex -S mix phx.server"
 alias reload="source ~/.zshrc"
-alias sp="emacs -nw ./"
-alias ss="./scripts/server"
 alias t="tmux"
 alias ta="tmux attach-session -t "
 alias tc="vim ~/.tmux.conf"
 alias tl="tmux list-sessions"
-alias tn="tmux new-session -s "
-alias up="omz update && ap && bu"
+alias up="omz update && asdf plugin-update --all && brew update && brew upgrade && brew cleanup && brew doctor"
+alias uuid="uuidgen | tr '[:upper:]' '[:lower:]'"
 alias v="vim"
 alias vr="vim ~/.vimrc"
 alias z="vim ~/.zshrc"
 
+# corrections
+unsetopt correct_all
+unsetopt correct
+
 # asdf
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
