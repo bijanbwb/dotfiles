@@ -8,21 +8,44 @@
     "editor.inlineSuggest.enabled": true,
     "editor.minimap.enabled": false,
     "editor.scrollBeyondLastLine": false,
+    "editor.stickyScroll.enabled": false,
+    "editor.tabSize": 2,
     "elixirLS.dialyzerEnabled": true,
     "elixirLS.enableTestLenses": false,
     "elixirLS.fetchDeps": false,
     "elixirLS.signatureAfterComplete": true,
     "elixirLS.suggestSpecs": true,
+    "elmLS.elmTestRunner.showElmTestOutput": true,
+    "elmLS.onlyUpdateDiagnosticsOnSave": true,
+    "elmLS.skipInstallPackageConfirmation": true,
+    "emmet.includeLanguages": {
+        "phoenix-heex": "html",
+        "elixir": "html"
+    },
+    "emmet.triggerExpansionOnTab": true,
     "explorer.compactFolders": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": true,
     "exunit.clearBetweenRuns": false,
     "exunit.saveAllBeforeRun": true,
+    "files.associations": {
+        "*.heex": "phoenix-heex"
+    },
     "files.trimTrailingWhitespace": true,
+    "tailwindCSS.includeLanguages": {
+        "phoenix-html": "html",
+        "elixir": "html"
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "terminal.integrated.scrollback": 3000,
+    "terminal.integrated.showExitAlert": false,
+    "terminal.integrated.stickyScroll.enabled": false,
     "terminal.integrated.tabs.enabled": false,
     "window.commandCenter": false,
     "window.confirmBeforeClose": "keyboardOnly",
     "workbench.activityBar.location": "hidden",
+    "workbench.editor.empty.hint": "hidden",
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.labelFormat": "short",
@@ -31,5 +54,11 @@
     "workbench.panel.defaultLocation": "right",
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.statusBar.visible": true
+    "workbench.statusBar.visible": true,
+    "[elixir]": {
+        "editor.defaultFormatter": "JakeBecker.elixir-ls"
+    },
+    "[phoenix-heex]": {
+        "editor.defaultFormatter": "JakeBecker.elixir-ls"
+    }
 }
