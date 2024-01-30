@@ -22,6 +22,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # exports
 export EDITOR=vim
+export ELIXIR_EDITOR="code-insiders -rg"
 export ERL_AFLAGS="-kernel shell_history enabled"
 export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac --without-wx --with-ssl=$(brew --prefix openssl@1.1)"
 export KERL_BUILD_DOCS=yes
